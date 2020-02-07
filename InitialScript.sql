@@ -145,6 +145,7 @@ create table dbo.ARQ_Task
 	intIdTask int primary key identity not null,
 	charName nvarchar(30) null,
 	charDescription nvarchar(300) null,
+	bitPrimaryTask bit not null,
 	bitDrop bit not null,
 	intIdUser int foreign key references SEG_User(intIdUser) null,
 	intIdState int foreign key references ARQ_State(intIdState) not null,
@@ -255,8 +256,8 @@ insert into dbo.ARQ_State (charValue, bitDrop) values ('Done', 0);
 insert into dbo.ARQ_Priority (charValue, bitDrop) values ('Low', 0);
 insert into dbo.ARQ_Priority (charValue, bitDrop) values ('Medium', 0);
 insert into dbo.ARQ_Priority (charValue, bitDrop) values ('High', 0);
-insert into dbo.ARQ_Task (charName, charDescription, intIdColumn, intIdPriority, intIdState, intIdUser, bitDrop) values ('Example Task', 'write description..', 1,1,1,1, 0);
-insert into dbo.ARQ_Task (charName, charDescription, intIdColumn, intIdPriority, intIdState, intIdUser, bitDrop) values ('Example SubTask', 'write description..', 1,1,1,1, 0);
+insert into dbo.ARQ_Task (charName, charDescription, intIdColumn, intIdPriority, intIdState, intIdUser, bitPrimaryTask,bitDrop) values ('Example Task', 'write description..',  1, 1, 1, 1, 1, 0);
+insert into dbo.ARQ_Task (charName, charDescription, intIdColumn, intIdPriority, intIdState, intIdUser, bitPrimaryTask,bitDrop) values ('Example SubTask', 'write description..', 1, 1, 1, 1, 0, 0);
 insert into dbo.LIN_UserPermitForBoard (intIdBoard, intIdUser, intIdPermit) values (1, 1, 1);
 insert into dbo.LIN_UserPermitForTask (intIdTask,intIdUser, intIdPermit) values (1, 1, 2);
 insert into dbo.LIN_SubTask (intIdPrimaryTask,intIdSecondTask) values (1, 2);
