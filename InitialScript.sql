@@ -36,6 +36,25 @@ go
 -- =================================================== --
 -- Author: Kevin Muñoz
 -- Date: 06/02/2020
+-- Description: segurity table of user rols
+--
+-- Last Modidied: xxxx xxxx
+-- Last Date Modified: xx/xx/xxxx
+-- Description of Modified: xxxx
+-- =================================================== --
+create table dbo.SEG_Rol
+(
+	intIdRol int primary key identity not null,
+	charValue nvarchar(20) not null,
+	bitDrop bit not null
+);
+
+print 'the table [SEG_Rol] was created.';
+go
+
+-- =================================================== --
+-- Author: Kevin Muñoz
+-- Date: 06/02/2020
 -- Description: segurity table of user info
 --
 -- Last Modidied: xxxx xxxx
@@ -47,7 +66,8 @@ create table dbo.SEG_User
 	intIdUser int primary key identity not null,
 	charName nvarchar(20) not null,
 	charPassword nvarchar(20) not null,
-	bitDrop bit not null
+	bitDrop bit not null,
+	intIdRol int foreign key references SEG_Rol(intIdRol) not null
 );
 
 print 'the table [SEG_User] was created.';
@@ -67,7 +87,7 @@ create table dbo.ARQ_Board
 	intIdBoard int primary key identity not null,
 	charName nvarchar(20) not null,
 	bitDrop bit not null,
-	intIdUser int foreign key references SEG_User(intIdUser) not null,
+	intIdUser int foreign key references SEG_User(intIdUser) not null
 );
 
 print 'the table [ARQ_Board] was created.';
@@ -210,7 +230,7 @@ create table dbo.LIN_UserPermitForTask
 	intIdUserPermitForTask int primary key identity not null,
 	intIdUser int foreign key references SEG_User(intIdUser) not null,
 	intIdPermit int foreign key references SEG_Permit(intIdPermit) not null,
-	intIdTask int foreign key references ARQ_Task(intIdTask) not null,
+	intIdTask int foreign key references ARQ_Task(intIdTask) not null
 )
 
 print 'the table [LIN_UserPermitForTask] was created.';
@@ -230,7 +250,7 @@ create table dbo.LIN_UserPermitForBoard
 	intIdUserPermitForBoard int primary key identity not null,
 	intIdUser int foreign key references SEG_User(intIdUser) not null,
 	intIdPermit int foreign key references SEG_Permit(intIdPermit) not null,
-	intIdBoard int foreign key references ARQ_Board(intIdBoard) not null,
+	intIdBoard int foreign key references ARQ_Board(intIdBoard) not null
 )
 
 print 'the table [LIN_UserPermitForBoard] was created.';
@@ -242,7 +262,10 @@ go
 -- ========================================================================================================= --
 -- ========================================================================================================= --
 
-insert into dbo.SEG_User(charName, charPassword, bitDrop) values ('ADM','1234', 0);
+insert into dbo.SEG_Rol (charValue, bitDrop) values ('Seller', 0);
+insert into dbo.SEG_Rol (charValue, bitDrop) values ('Administrator', 0);
+insert into dbo.SEG_User(charName, charPassword, bitDrop, intIdRol) values ('ADM','adm', 0, 1);
+insert into dbo.SEG_User(charName, charPassword, bitDrop, intIdRol) values ('Vendedor','1234', 0, 2);
 insert into dbo.SEG_Permit (bitInsert, bitUpdate, bitDelete, bitDrop) values (1, 1, 1, 0);
 insert into dbo.SEG_Permit (bitInsert, bitUpdate, bitDelete, bitDrop) values (1, 1, 0, 0);
 insert into dbo.ARQ_Board (charName, intIdUser, bitDrop) values ('Default Table', 1, 0);
