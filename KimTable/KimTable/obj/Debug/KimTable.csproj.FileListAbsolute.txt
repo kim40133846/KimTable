@@ -1,0 +1,13 @@
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\bin\Debug\KimTable.exe.config
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\bin\Debug\KimTable.exe
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\bin\Debug\KimTable.pdb
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\bin\Debug\Logic.dll
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\bin\Debug\Logic.pdb
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\obj\Debug\KimTable.csprojAssemblyReference.cache
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\obj\Debug\KimTable.KimTable.resources
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\obj\Debug\KimTable.Properties.Resources.resources
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\obj\Debug\KimTable.csproj.GenerateResource.cache
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\obj\Debug\KimTable.csproj.CopyComplete
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\obj\Debug\KimTable.exe
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\obj\Debug\KimTable.pdb
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\KimTable\obj\Debug\KimTable.Common.WorkTable.resources

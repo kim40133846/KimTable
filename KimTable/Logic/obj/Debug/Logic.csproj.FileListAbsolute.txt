@@ -1,0 +1,10 @@
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\bin\Debug\Logic.dll
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\bin\Debug\Logic.pdb
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\bin\Debug\Dao.dll
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\bin\Debug\Entities.dll
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\bin\Debug\Dao.pdb
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\bin\Debug\Entities.pdb
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\obj\Debug\Logic.csprojAssemblyReference.cache
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\obj\Debug\Logic.csproj.CopyComplete
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\obj\Debug\Logic.dll
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Logic\obj\Debug\Logic.pdb

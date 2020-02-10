@@ -1,0 +1,8 @@
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Dao\bin\Debug\Dao.dll
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Dao\bin\Debug\Dao.pdb
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Dao\bin\Debug\Entities.dll
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Dao\bin\Debug\Entities.pdb
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Dao\obj\Debug\Dao.csprojAssemblyReference.cache
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Dao\obj\Debug\Dao.csproj.CopyComplete
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Dao\obj\Debug\Dao.dll
+C:\Users\kevin.munoz\Desktop\Proyectos\C#\KimTable\KimTable\Dao\obj\Debug\Dao.pdb
